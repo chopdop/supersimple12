@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marketplace Demo</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #0d0d0d;
+  color: #f5f5f5;
+}
+
+header {
+  background: #111;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #222;
+}
+
+header h1 {
+  color: #00ff99;
+  letter-spacing: 2px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px;
+  background: #141414;
+}
+
+nav a {
+  color: #ccc;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #00ff99;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.card {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+  border: 1px solid #222;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #00ff99;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.price {
+  color: #00ff99;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+button {
+  background: #00ff99;
+  color: #000;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #00cc77;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #777;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Marketplace Demo</h1>
+</header>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#">Products</a>
+  <a href="#">Categories</a>
+  <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+  <div class="card">
+    <img src="https://picsum.photos/300/200?random=1" alt="Product 1">
+    <h2>Wireless Headphones</h2>
+    <p>High-quality sound and long battery life.</p>
+    <div class="price">$79.99</div>
+    <button>Add to Cart</button>
+  </div>
+
+  <div class="card">
+    <img src="https://picsum.photos/300/200?random=2" alt="Product 2">
+    <h2>Smartwatch</h2>
+    <p>Track your fitness and notifications.</p>
+    <div class="price">$129.99</div>
+    <button>Add to Cart</button>
+  </div>
+
+  <div class="card">
+    <img src="https://picsum.photos/300/200?random=3" alt="Product 3">
+    <h2>Gaming Mouse</h2>
+    <p>Precision and style for gamers.</p>
+    <div class="price">$49.99</div>
+    <button>Add to Cart</button>
+  </div>
+
+  <div class="card">
+    <img src="https://picsum.photos/300/200?random=4" alt="Product 4">
+    <h2>Bluetooth Speaker</h2>
+    <p>Loud, clear sound for parties or home.</p>
+    <div class="price">$59.99</div>
+    <button>Add to Cart</button>
+  </div>
+
+  <div class="card">
+    <img src="https://picsum.photos/300/200?random=5" alt="Product 5">
+    <h2>Portable Charger</h2>
+    <p>Never run out of battery again.</p>
+    <div class="price">$39.99</div>
+    <button>Add to Cart</button>
+  </div>
+
+  <div class="card">
+    <img src="https://picsum.photos/300/200?random=6" alt="Product 6">
+    <h2>VR Headset</h2>
+    <p>Immersive virtual reality experience.</p>
+    <div class="price">$299.99</div>
+    <button>Add to Cart</button>
+  </div>
+</div>
+
+<footer>
+  © 2026 Marketplace Demo. All rights reserved.
+</footer>
+
+</body>
+</html>
